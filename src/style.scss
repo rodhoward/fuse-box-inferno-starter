@@ -1,0 +1,21 @@
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+.blar {
+    color: red;
+}
+
+.btn-outline-blue {
+    @include button-outline-variant($blue,
+    $white,
+    $blue);
+  }
+
+  $input-btn-padding-y-xs: .20rem !default;
+$input-btn-padding-x-xs: .4rem !default;
+$input-btn-line-height-xs: 1.5 !default;
+$input-btn-font-size-xs: 0.7rem;
+
+.btn-xs {
+    @include button-size($input-btn-padding-y-xs, $input-btn-padding-x-xs, 0.7rem, $input-btn-line-height-xs, $btn-border-radius-sm);
+}
